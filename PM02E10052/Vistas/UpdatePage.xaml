@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02E10052.Vistas.UpdatePage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="id" FontSize="24" Grid.Row="0"  Grid.Column="0" TextColor="#F8F3F3"></Label>
+                <Entry x:Name="txtid" Keyboard="Numeric" Grid.Row="0"  Grid.Column="1"  Text="{Binding id}" IsEnabled="False"></Entry>
+
+                <Label Text="Latitud actual" TextColor="#F8F3F3"  FontSize="24" Grid.Row="1"  Grid.Column="0"></Label>
+                <Entry x:Name="txtlatitud" Keyboard="Numeric" Grid.Row="1"  Grid.Column="1" Text="{Binding latitud}"></Entry>
+
+                <Label Text="Longitud actual" TextColor="#F8F3F3"  FontSize="24" Grid.Row="2"  Grid.Column="0"></Label>
+                <Entry x:Name="txtlongitud" Keyboard="Numeric" Grid.Row="2"  Grid.Column="1" Text="{Binding longitud}"></Entry>
+
+                <Label Text="Descripcion la ubicacion" TextColor="#F8F3F3" FontSize="24" Grid.Row="3"  Grid.Column="0"></Label>
+                <Entry x:Name="txtdescripcion" Keyboard="Text" Grid.Row="3"  Grid.Column="1" Text="{Binding descripcion}"></Entry>
+
+                
+                <Button Text="Modificar" x:Name="Modificar" Clicked="Modificar_Clicked" CornerRadius="40" BackgroundColor="Black" Grid.Row="6"  Grid.Column="0" ></Button>
+                <Button Text="Eliminar" x:Name="Eliminar" Clicked="Eliminar_Clicked" CornerRadius="40" BackgroundColor="Black"  Grid.Row="6"  Grid.Column="1"></Button>
+               
+
+            </Grid>
+             <Button Text="IR A GPS" x:Name="gps" Clicked="gps_Clicked" CornerRadius="40"  BackgroundColor="Black"></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+
+
+</ContentPage>

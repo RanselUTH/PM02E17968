@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02E10052.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkGray" 
+               Padding="24" 
+               CornerRadius="0">
+            <Label Text="Examen I Parcial" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="20"/>
+        </Frame>
+        
+        <Label Text="Yovanny Ransel Funez - 201920040079" 
+               Margin="50"
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="20"/>
+        <Label Text="Yasser Emanuel Diaz - 201910040168" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="20"/>
+
+        <Image Source="logo.png" 
+                   x:Name="imagen" 
+                   HorizontalOptions="Center" 
+                   HeightRequest="180" 
+                   WidthRequest="250"
+               />
+
+        <Button Text="Entrar" 
+                x:Name="btn_abrir" 
+                Clicked="btn_abrir_Clicked"
+                
+                TextTransform="None"
+                BackgroundColor="White"
+                TextColor="Black"
+                CornerRadius="40"
+                FontSize="24"
+                VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
+
+</ContentPage>

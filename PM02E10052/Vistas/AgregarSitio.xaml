@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02E10052.Vistas.AgregarSitio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="White" 
+                   Padding="24" 
+                   CornerRadius="0">
+                
+                <Label Text="Añadir Sitios Visitados"
+                       TextColor="Black"
+                       FontSize="48"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </Frame>
+
+            <Image Source="location.png" 
+                   x:Name="imagen" 
+                   HorizontalOptions="Center" 
+                   HeightRequest="100" 
+                   WidthRequest="280"
+                   Margin="20,0,20,20"/>
+            
+            <Button Text="Tomar Fotografia" 
+                    x:Name="btncargarimg"
+                    FontSize="18"
+                    Clicked="btncargarimg_Clicked_1" 
+                    Margin="60,0,60,0"
+                    TextTransform="None"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Black"
+                    CornerRadius="20"
+                    TextColor="White"/>
+
+            <Label FontSize="14" Margin="10,10,30,5" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Latitud: "/>
+                            <Span x:Name="lbllatitud"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+
+            <Label FontSize="14" Margin="10,0,30,10" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Longitud: "/>
+                            <Span x:Name="lbllongitud" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="Descripcion"
+                       TextColor="White"
+                       FontSize="18"
+               Margin="10,0,0,0"
+                />
+            <Entry Placeholder="Ingrese la Descripcion" 
+                   x:Name="describir" 
+                   Margin="10,0,30,0"
+                   MaxLength="80" />
+
+            <Grid Margin="0,0,0,0">
+              
+
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Agregar" 
+                    x:Name="btnagregar" 
+                    Clicked="btnagregar_Clicked"
+                     Margin="10,0,10,0"
+                    TextTransform="None"
+                    BackgroundColor="Black"
+                    HorizontalOptions="Center"
+                    CornerRadius="20"
+                    FontSize="18"
+                    TextColor="White"/>
+
+               
+
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="Ver los Sitios" 
+                    x:Name="btnlista" 
+                    Clicked="btnlista_Clicked"
+                     Margin="10,0,10,0"
+                    TextTransform="None"
+                    FontSize="18"
+                    BackgroundColor="Black"
+                    HorizontalOptions="Center"
+                    CornerRadius="20"
+                    TextColor="White"/>
+            </Grid>
+            
+
+            <Button
+                   
+                    Text="Compartir Foto" 
+                    x:Name="btncompartir" 
+                    Clicked="btncompartir_Clicked"
+                     Margin="80,0,80,0"
+                    TextTransform="None"
+                    BackgroundColor="Black"
+                    HorizontalOptions="Center"
+                    CornerRadius="20"
+                    FontSize="18"
+                    TextColor="White"/>
+
+            <Button
+                   
+                    Text="Compartir Sitio" 
+                    x:Name="btncompartirSitio" 
+                    Clicked="btncompartirSitio_Clicked"
+                     Margin="80,0,80,0"
+                    TextTransform="None"
+                    BackgroundColor="Black"
+                    HorizontalOptions="Center"
+                    CornerRadius="20"
+                    FontSize="18"
+                    TextColor="White"/>
+
+            <Button
+                    Text="Salir" 
+                    x:Name="btnsalir" 
+                   Clicked="btnsalir_Clicked"
+                     Margin="100,10,100,0"
+                    TextTransform="None"
+                    FontSize="18"
+                    BackgroundColor="Black"
+                    CornerRadius="20"
+                    HorizontalOptions="Center"
+                    TextColor="White"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
